@@ -8,12 +8,11 @@ Based on [rabbitmq:3-management](https://hub.docker.com/_/rabbitmq/)
 docker run -d \
     --hostname rabbit \
     --name rabbit \ 
-    -e "RABBITMQ_NODENAME=rabbit@docker" \
     -v /srv/docker/rabbit/data:/var/lib/rabbitmq \
     -p 1883:1883 \
     bboehmke/rabbitmq-mqtt-ldap
 ```
-This will start RabbitMQ with the node name ```rabbit@docker``` . The MQTT 
+This will start RabbitMQ with the name rabbit. The MQTT 
 port is  forwarded and the data storage is mapped on 
 ```/srv/docker/rabbit/data``` .
 
