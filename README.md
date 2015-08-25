@@ -13,9 +13,9 @@ docker run -d \
     -p 1883:1883 \
     bboehmke/rabbitmq-mqtt-ldap
 ```
-This will start RabbitMQ with the node name ```rabbit@docker```. The MQTT 
+This will start RabbitMQ with the node name ```rabbit@docker``` . The MQTT 
 port is  forwarded and the data storage is mapped on 
-```/srv/docker/rabbit/data```.
+```/srv/docker/rabbit/data``` .
 
 If a custom configuration is required (e.g. enabling SSL), use the following 
 command:
